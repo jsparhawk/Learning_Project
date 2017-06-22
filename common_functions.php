@@ -1,11 +1,11 @@
 
 <?php
+session_start();
 
 
+//require 'menu.php';
 
-require 'menu.php';
-
-echo "<H2>Results</H2>";
+//echo "<H2>Results</H2>";
 
 
 
@@ -13,7 +13,9 @@ echo "<H2>Results</H2>";
 function submit_sql($conn, $sql) {
 
 if (mysqli_query($conn, $sql)) {
-   echo "<H3>Database Updated Successfully</H3>";
+   //echo "<H3>Database Updated Successfully</H3>";
+   $_SESSION["test"]= "<H3>Database Updated Successfully</H3>";
+
 
 }
 else {

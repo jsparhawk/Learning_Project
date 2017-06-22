@@ -1,4 +1,4 @@
-<?php require 'database_connection.php'; ?>
+
 
 <!doctype html>
 <head>

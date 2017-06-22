@@ -1,5 +1,6 @@
 <?php require 'database_connection.php'; ?>
-<?php require 'results_form.php'; ?>
+<?php //require 'results_form.php'; ?>
+<?php require 'common_functions.php'; ?>
 
 
 

@@ -1,3 +1,5 @@
+<?php require 'sql_store.php'; ?>
+
 <!doctype html>
 <head>
 
@@ -41,7 +43,18 @@
 </form>
 </div>
 
+<?php 
 
+if (isset($_SESSION["test"])) {
+    echo "This var is set so I will print.";
+}
+// remove all session variables
+session_unset();
+
+
+// destroy the session 
+session_destroy();
+?>
 
 </body>
 

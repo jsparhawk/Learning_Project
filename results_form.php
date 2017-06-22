@@ -3,18 +3,18 @@
 
 require 'menu.php';
 
-echo "<H2>Results</H2>";
+//echo "<H2>Results</H2>";
 
 
 //executes sql statement that updates database
 function submit_sql($conn, $sql) {
 
 if (mysqli_query($conn, $sql)) {
-   echo "<H3>Database Updated Successfully</H3>";
+  echo "<H3>Database Updated Successfully</H3>";
 
 }
 else {
-    echo "SQL Error: " . mysqli_error($conn);
+   echo "SQL Error: " . mysqli_error($conn);
 }
 }
 
